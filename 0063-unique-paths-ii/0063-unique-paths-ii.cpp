@@ -60,11 +60,11 @@ public:
                      if (i == 0 && j == 0)
                     continue;
                     int up = 0;
-                    if (i >= 1 && grid[i - 1][j] == 0) {
+                    if (i >= 1) {
                         up = dp[i - 1][j];
                     }
                     int left = 0;
-                    if (j >= 1 && grid[i][j - 1] == 0) {
+                    if (j >= 1) {
                         left = dp[i][j - 1];
                     }
                     dp[i][j] = up + left;
