@@ -23,7 +23,7 @@ public:
     //     return dp[row][col] = up + left;
     // }
     int uniquePaths(int m, int n) {
-        vector<vector<int>>dp(m+1,vector<int>(n+1,1));
+        vector<vector<int>>dp(m,vector<int>(n,1));
         
         dp[0][0] = 1;
 
