@@ -7,8 +7,8 @@ public:
         long long max3 = LLONG_MIN;
         for(int i=0;i<n;i++)
         {
-             if (nums[i] == max1 || nums[i] == max2 || nums[i] == max3)
-                continue;
+            //  if (nums[i] == max1 || nums[i] == max2 || nums[i] == max3)
+            //     continue;
             if(max1 < nums[i])
             {
                 max3 = max2;
