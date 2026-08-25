@@ -90,9 +90,10 @@ public:
                             if (j1 + d1 >= 0 && j1 + d1 < m && j2 + d2 >= 0 &&
                                 j2 + d2 < m) {
                                 cherry += dp[i + 1][j1 + d1][j2 + d2];
-                            } else {
-                                cherry += -1e9;
-                            }
+                            } 
+                            // else {
+                            // //     cherry += -1e9;
+                            // // }
                             maxi = max(maxi, cherry);
                         }
                     }
