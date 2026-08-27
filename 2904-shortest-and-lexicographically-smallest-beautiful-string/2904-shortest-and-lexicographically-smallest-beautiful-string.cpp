@@ -52,10 +52,10 @@ public:
 
                 i++;
             }
-            else {
-                // Not enough 1s remaining
-                break;
-            }
+            // else {
+            //     // Not enough 1s remaining
+            //     break;
+            // }
         }
 
         return ans;
