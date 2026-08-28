@@ -30,7 +30,7 @@ vector<vector<string>>ans;
 
             if(val)
             {
-                 temp.push_back(s.substr(ind, k - ind + 1));
+                temp.push_back(s.substr(ind, k - ind + 1));
                 solve(s,n,k+1,ans,temp);
                 temp.pop_back();
 
