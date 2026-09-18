@@ -14,7 +14,8 @@ public:
             int notTake = solve(prices, day + 1, n, true, dp);
 
             return dp[day][buy] = max(take, notTake);
-        } else {
+        } 
+        else {
             int sell = prices[day] + solve(prices, day + 2, n, true, dp);
             int notSell = solve(prices, day + 1, n, false, dp);
 
@@ -24,6 +25,7 @@ public:
 
     int maxProfit(vector<int>& prices) {
         int n = prices.size();
+
         vector<vector<int>> dp(n, vector<int>(2, -1));
 
         return solve(prices, 0, n, true, dp);
