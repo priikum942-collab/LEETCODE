@@ -6,7 +6,7 @@ public:
 
         for(int i=0;i<n;i++)
         {
-            int num = 26 - (s[i]-'a');
+            int num = ('z'-s[i])+1;
             sum += num*(i+1);
         }
 
