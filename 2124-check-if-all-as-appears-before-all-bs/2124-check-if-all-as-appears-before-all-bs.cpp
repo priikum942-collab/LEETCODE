@@ -1,15 +1,19 @@
 class Solution {
 public:
     bool checkString(string s) {
-        string temp = s;
+        int n = s.size();
 
-        sort(temp.begin(),temp.end());
-
-        if(temp == s)
+        for(int i=0;i<n-1;i++)
         {
-            return true;
+            string temp;
+            temp += s[i];
+            temp += s[i+1];
+            if(temp == "ba")
+            {
+                return false;
+            }
         }
 
-        return false;
+        return true;
     }
 };
